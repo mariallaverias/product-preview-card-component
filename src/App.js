@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import "./index";
+import axios from "axios";
+import PerfumeCard from "./components/PerfumeCard";
 
 function App() {
+  const [product, setProduct] = useState();
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 800);
+  const [error, setError] = useState("");
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 800);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+  useEffect(() => {
+    getData();
+  }, []);
+
+  async function getData() {
+    try {
+      const data = await axios("/data.json");
+      console.log(data);
+      setProduct(data.data);
+    } catch (err) {
+      setError(err.message);
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PerfumeCard product={product} isDesktop={isDesktop}></PerfumeCard>
     </div>
   );
 }
