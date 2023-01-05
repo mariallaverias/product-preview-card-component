@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import "./index";
 import axios from "axios";
 import PerfumeCard from "./components/PerfumeCard";
 
