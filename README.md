@@ -8,17 +8,6 @@ Users should be able to view the optimal layout depending on their device's scre
 
 Instead of just using CSS and HTML as the challenge stated, I decided to create a React App to continue practicing creating components, pretending to fetch data and conditionally render and style elements.
 
-### Screenshots
-
-![Desktop view screenshopt](./readme/screenshot-desktop.jpg)
-
-![Mobile view screenshopt](./readme/screenshot-mobile.jpg)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -27,3 +16,13 @@ Instead of just using CSS and HTML as the challenge stated, I decided to create 
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
+
+### Setup
+
+Run `npm install` on root folder to install all the project dependencies.
+
+### Screenshots
+
+![Desktop view screenshopt](./readme/screenshot-desktop.jpg)
+
+![Mobile view screenshopt](./readme/screenshot-mobile.jpg)
