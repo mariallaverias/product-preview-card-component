@@ -24,7 +24,9 @@ function App() {
 
   async function getData() {
     try {
-      const data = await axios(process.env.PUBLIC_URL + "/data.json");
+      const data = await axios(
+        process.env.PUBLIC_URL + "/product-preview-card-component/data.json"
+      );
       setProduct(data.data);
     } catch (err) {
       setError(err.message);
