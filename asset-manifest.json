@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/product-preview-card-component/static/css/main.39c5fdac.css",
+    "main.js": "/product-preview-card-component/static/js/main.2759b41f.js",
+    "index.html": "/product-preview-card-component/index.html",
+    "main.39c5fdac.css.map": "/product-preview-card-component/static/css/main.39c5fdac.css.map",
+    "main.2759b41f.js.map": "/product-preview-card-component/static/js/main.2759b41f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39c5fdac.css",
+    "static/js/main.2759b41f.js"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Gabrielle Essence Eau De Parfum",
+    "type": "perfume",
+    "description": "A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.",
+    "price": 169.99,
+    "discount": true,
+    "dPrice": 149.99,
+    "inStock": true,
+    "imageMobile": "/images/image-product-mobile.jpg",
+    "imageDesktop": "/images/image-product-desktop.jpg"
+  }
+]
