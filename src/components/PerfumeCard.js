@@ -11,7 +11,11 @@ function PerfumeCard({ product, isDesktop }) {
           <div className="perfumeCard" key={prod.id}>
             <div className="prodImage">
               <img
-                src={isDesktop ? prod.imageDesktop : prod.imageMobile}
+                src={
+                  isDesktop
+                    ? process.env.PUBLIC_URL + prod.imageDesktop
+                    : process.env.PUBLIC_URL + prod.imageMobile
+                }
                 alt={prod.name}
                 key={prod.id}
               />

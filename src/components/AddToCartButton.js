@@ -4,7 +4,11 @@ function AddToCartButton() {
   return (
     <div>
       <button>
-        <img className="icon" src="../images/icon-cart.svg" alt="cart icon" />
+        <img
+          className="icon"
+          src={process.env.PUBLIC_URL + "/images/icon-cart.svg"}
+          alt="cart icon"
+        />
         <h4>Add&nbsp;to&nbsp;Cart</h4>
       </button>
     </div>
